@@ -1,0 +1,267 @@
+@import 'grid';
+@import 'variables';
+@import 'universal';
+
+
+
+header {
+	background-color: $fill-color;
+	padding: 1em 2em;
+  	.logo {
+  		height: 5em;
+  		background-image: url(../assets/yellowspoke.png);
+  		background-repeat: no-repeat;
+  		background-size: contain;
+  	}
+  	.headline-wrapper {
+	  	h1 {
+	  		margin: 0;
+	  	}
+	  	h2 {
+	  		margin: 0;
+	  	}
+	  	.location {
+	  		margin-top: 0;
+	  		border-bottom: solid 1px $tire-color;
+	  	}
+  	}
+  	border-bottom: solid 4px $tire-color;
+  	margin-bottom: 2em;
+}
+
+section {
+	padding: 1em;
+	margin-bottom: 2em;
+
+}
+
+.nav {
+	.navbutton {
+		background-color: $dormant-color;
+		border-radius: 50%;
+		height: 2em;
+		width: 2em;
+		margin: auto;
+		text-align: center;
+		padding: 1.5em;
+			i {
+				font-size: 2em;
+			}
+			&:hover {
+				background-color: $accent-royal;
+			}
+		}
+	.active {
+				background-color: $active-color;
+		}
+	h3 {
+		text-align: center;
+		margin-bottom: 0;
+	}
+}
+
+.formWrapper {
+	border: solid 4px $dormant-color;
+	.selectMetric {
+		label {
+			padding: 1em;
+		}
+		select {
+			border: 0;
+		}
+	 }
+}
+
+.inline-things {
+	display: inline-block;
+}
+
+.tile {
+	background-color: $dormant-color;
+	border-radius: 4px;
+	margin-bottom: 1em;
+	padding: 0em 1em;
+	h3 {
+		margin-left: 1em;
+	}
+	&:hover {
+				background-color: $accent-royal;
+			}
+}
+
+.active-wrapper, .hidden-wrapper {
+	padding: 0em 0.5em;
+	img {
+		padding: 0em 0.5em;
+	}
+}
+
+.active {
+		background-color: $active-color;
+		border-radius: 4px 4px 0px 0px;
+		}
+
+.ratePage {
+	h3 {
+		.inline-things {
+		font-size: 1em;
+		}
+	}
+	.active {
+		background-color: $active-color;
+		&:hover {
+			background-color: $active-color;
+		}
+	}
+}
+
+.rating {
+	padding: 0.25em 0em;
+	h3 {
+		font-family: 'Bree Serif';
+	}
+}
+
+.ratingName {
+margin: 0 0 0 0.5em;
+}
+
+.neighborhoodphoto {
+	padding-right: 1em;
+	height: 5em;
+	  background: 
+    /* top, transparent beige, faked with gradient */ 
+    linear-gradient(
+      rgba(49, 40, 44, 0.0), 
+      rgba(49, 40, 44, 0.0) ac
+    ),
+    /* bottom, image */
+    url(../assets/hood.jpg);
+      background-size: cover;
+}
+
+.loadmore {
+	border-radius: 0em;
+	background-color: $fill-color;
+	text-align: center;
+	font-style: italic;
+	padding: 0.2em;
+	&:hover {
+				background-color: $active-color;
+			}
+}
+
+.formwrapper{ 
+	text-align: center;
+	span {
+	padding: 0;
+	margin-bottom: 0;
+	width: 40%;
+	display: inline-block;
+	}
+}
+.dropdown {
+	text-align: center;
+	margin: 1em 0em;
+	padding: 0.5em;
+	h3 {
+		font-size: 1.5em;
+		margin: 0;
+	}
+	i {
+		font-size: 2em;
+		margin-left: 0.5em;
+	}
+}
+
+
+.radiobuttons {
+	i {
+		padding-top: 10px;
+		font-size: 1.5em;
+		padding: 0.5em 0.5em;
+	}
+	text-align: center;
+	div {
+	  margin:0 0 0.75em 0;
+	}
+
+	input[type="radio"] {
+	    display:none;
+	}
+	input[type="radio"] + label {
+	    color: $accent-royal;
+	    font-family:Arial, sans-serif;
+	    font-size:14px;
+	}
+	input[type="radio"] + label span {
+	    display:inline-block;
+	    width:19px;
+	    height:19px;
+	    margin:-1px 4px 0 0;
+	    vertical-align:middle;
+	    cursor:pointer;
+	    -moz-border-radius:  50%;
+	    border-radius:  50%;
+	}
+
+	input[type="radio"] + label span {
+	     background-color:$accent-royal;
+	}
+
+	input[type="radio"]:checked + label span{
+	     background-color:$active-color;
+	}
+
+	input[type="radio"] + label span,
+	input[type="radio"]:checked + label span {
+	  -webkit-transition:background-color 0.4s linear;
+	  -o-transition:background-color 0.4s linear;
+	  -moz-transition:background-color 0.4s linear;
+	  transition:background-color 0.4s linear;
+	}
+}
+
+.directions {
+	padding: 0.5em;
+	h3 {
+		font-size: 1em;
+	}
+}
+
+.suggestPage {
+	padding: 0 1em;
+	h5 {
+		text-align: left;
+		font-family: 'Open Sans';
+	}
+	.active {
+		background-color: $active-color;
+		&:hover {
+			background-color: $active-color;
+		}
+	}
+}
+
+.tellus {
+	text-align: center;
+	margin-bottom: 5em;
+}
+
+.footer {
+	h3 {
+		padding: 0;
+		margin: 0.5em;
+	}
+	position:fixed;
+   	left:0px;
+   	bottom:0px;
+   	width:100%;
+	font-size: 1.25em;
+	border-radius: 0em;
+	background-color: $dormant-color;
+	text-align: center;
+		&:hover {
+		background-color: $accent-royal;
+		}
+}

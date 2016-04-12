@@ -1,0 +1,70 @@
+h1 {
+	font-family: 'Bree Serif';
+	font-size: 1.5em;
+	font-weight: normal;
+	color: $tire-color;
+}
+
+
+h2 {
+	font-family: 'Open Sans';
+	font-size: 1em;
+	font-weight: normal;
+	color: $tire-color;
+}
+
+h3 {
+	font-family: 'Open Sans';
+	font-size: 1em;
+	font-weight: normal;
+	color: $tire-color;
+}
+
+i {
+	color: $tire-color;
+	text-align: center;
+	}
+
+.cta-button {
+	margin: 0 auto;
+	width: 70%;
+	border: solid 4px $accent-royal;
+	h4 {
+		margin: 0;
+		font-family: 'Bree Serif';
+		text-align: center;
+		color: $accent-royal;
+		padding: 1em;
+		background-color: $fill-color;
+	}
+}
+
+p {
+	font-family: 'Open Sans';
+	margin-top: 0em;
+	font-size: 1em;
+	line-height: 1.6em;
+}
+
+a {
+	text-decoration: none;
+}
+
+textarea {
+	width: 98%;
+}
+
+h5 {
+	text-transform: uppercase;
+	font-family: 'Bree Serif';
+	text-align: center;
+	font-size: 1.5em;
+	padding: 0;
+	margin: 0 auto;
+	font-weight: normal;
+}
+
+select {
+border: 0;
+padding: 0.25em;
+}
